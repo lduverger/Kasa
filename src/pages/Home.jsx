@@ -1,11 +1,14 @@
-import React from 'react';
-import HookImage from '../components/HookImage';
+import React, { useState } from 'react';
+import BannerImage from '../components/BannerImage';
+import homeBackground from "../assets/images/homePageBackground.png"
+import Gallery from '../components/Gallery';
 
 const Home = () => {
+
     return (
         <div>
-            <HookImage />
-            <h1>Home</h1>
+            <BannerImage background={homeBackground} text="Chez vous, partout et ailleurs"/>
+            <Gallery />
         </div>
     );
 };

@@ -1,0 +1,18 @@
+.pageNotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 139px;
+    margin-bottom: 139px;
+
+    h1{
+        color: $primary-color;
+        font-size: 288px;
+    }
+
+    p{
+        color: $primary-color;
+        font-size: 36px;
+    }
+}

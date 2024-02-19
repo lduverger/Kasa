@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <div>
+        <nav>
             <ul>
                 <NavLink to="/">
                 <li>Accueil</li>
@@ -12,7 +12,7 @@ const Navigation = () => {
                 <li>A Propos</li>
                 </NavLink>
             </ul>
-        </div>
+        </nav>
     );
 };
 

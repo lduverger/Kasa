@@ -1,0 +1,28 @@
+.collapse{
+
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 34px;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 5px;
+        padding: 0 15px;       
+    }
+    p{
+        background-color: #F6F6F673;
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    &-about{
+        font-size: 24px;
+    }
+
+    &-housing{
+        font-size: 18px;
+    }
+
+}

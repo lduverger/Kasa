@@ -1,0 +1,10 @@
+.cards-container{
+    background-color: #F6f6f6;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 25px;
+    grid-column-gap: 60px;
+    grid-row-gap: 50px;
+    padding: 50px;
+}

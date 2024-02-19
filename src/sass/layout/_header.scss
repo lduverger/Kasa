@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    nav{
+        display: flex;
+        align-items: center;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    a{
+        margin-left: 60px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+}

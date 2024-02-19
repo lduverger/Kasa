@@ -17,7 +17,6 @@ function App() {
         <Route path='/about' element={<About />}></Route>
         <Route path='/housing' element={<Housing />}></Route>
         <Route path='*' element={<NotFound />}></Route>
-
       </Routes>
       <Footer />
     </BrowserRouter>
