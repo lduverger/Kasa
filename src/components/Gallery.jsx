@@ -4,21 +4,22 @@ import data from '../assets/data/logements.json'
 
 const Gallery = () => {
 
-    const [lodgings, setLodgings] = useState([]);
+    const [housings, setHousings] = useState([]);
 
     useEffect(() => {
-        setLodgings(data)
+        setHousings(data)
     }, []);
 
 
     return (
         <div className='cards-container'>
             {
-                lodgings.map(lodging => (
-                    <Card key={lodging.id} 
-                    src={lodging.cover} 
-                    alt={"Photo de " + lodging.title}
-                    title={lodging.title}
+                housings.map(housing => (
+                    <Card key={housing.id}
+                    id= {housing.id}
+                    src={housing.cover} 
+                    alt={"Photo de " + housing.title}
+                    title={housing.title}
                     />
                 ))
             }
