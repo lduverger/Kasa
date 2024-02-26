@@ -1,28 +1,36 @@
 .collapse{
 
+    margin-bottom: 20px;
+
     &-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 34px;
+        height: 52px;
         background-color: $primary-color;
         color: white;
         border-radius: 5px;
         padding: 0 15px;       
     }
+    
     p{
         background-color: #F6F6F673;
         font-size: 18px;
         padding: 20px;
         border-radius: 5px;
+        line-height: 142.6%;
     }
     
     &-about{
         font-size: 24px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &-housing{
         font-size: 18px;
+        flex: 1;
     }
 
 }

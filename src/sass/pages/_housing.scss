@@ -1,0 +1,46 @@
+.housing {
+
+    &_content{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    &_title {
+        color: $primary-color;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    &_location {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &_tags{
+        display: flex;
+        gap: 10px;
+    }
+
+    &_host-name{
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 18px; 
+        line-height: 142.6%;
+        text-align: right; 
+    }
+
+    &_host-avatar{
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &_collapses{
+        display: flex;
+        gap: 76px;
+    }
+
+
+}
