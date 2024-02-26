@@ -10,15 +10,17 @@ const Housing = () => {
 
     const location = useLocation();
     const housing = data.find(housingData => housingData.id === location.state.id);
-
     const [index, setIndex] = useState(0);
 
+    const picturesNB = housing.pictures.length;
+
     const handleRight = () => {
-        (prev >= housing.pictures.length - 1 ? 0 : prev + 1 );    
+        setIndex((prev) => (prev >= picturesNB - 1 ? 0 : prev + 1 ));    
     }
 
     const handleLeft = () => {
-        setIndex((prev) => (prev <= 0 ? housing.pictures.length - 1  : prev - 1));    }
+        setIndex((prev) => (prev <= 0 ? picturesNB - 1  : prev - 1));
+    }
 
 
     return (
@@ -27,7 +29,7 @@ const Housing = () => {
                 <img className='carousel_picture' src={housing.pictures[index]} alt="Logement" />
                 <img onClick={handleLeft} className='carousel_arrow carousel_left' src={leftArrow} alt="Fleche gauche" />
                 <img onClick={handleRight} className='carousel_arrow carousel_right' src={rightArrow} alt="Fleche droite" />
-                <p className='carousel_index'>{index + 1}/{housing.pictures.length}</p>
+                <p className='carousel_index'>{index + 1}/{picturesNB}</p>
             </div>
             <section className='housing_content'>
                 <div className='housing_brief'>

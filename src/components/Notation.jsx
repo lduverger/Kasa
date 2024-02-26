@@ -15,14 +15,6 @@ const Notation = ({rating}) => {
     return (
         <div className='rating-container'>
             {rate}
-            {
-                [...Array(5)].map((index) => {
-                    console.log("star value = ",  index);
-                    
-
-
-                })
-            }
         </div>
     );
 };
