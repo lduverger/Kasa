@@ -1,6 +1,7 @@
 header{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
     margin-bottom: 50px;
 
     nav{
@@ -13,6 +14,7 @@ header{
     }
 
     a{
+        font-weight: 500;
         margin-left: 60px;
         &:hover{
             text-decoration: underline;
