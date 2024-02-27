@@ -19,7 +19,6 @@ const Collapse = ({ className='', title, content }) => {
                 <img src={upArrow} alt="fleche" />
             </div>
             {isExpanded && <p>{content}</p>}
-
         </div>
     );
 };

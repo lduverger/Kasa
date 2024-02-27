@@ -3,20 +3,17 @@ import inactiveStar from '../assets/images/inactiveStar.svg';
 import activeStar from '../assets/images/activeStar.svg';
 
 
-const Notation = ({rating}) => {
-    const stars = 5;
-    let rate = [];
+const Notation = ({ rating }) => {
+  const STARS = 5;
 
-    for (var i = 0; i < stars; i++) {
-        if (i < rating)   rate.push(<img key={i} src={activeStar}></img>);
-        else rate.push(<img key={i} src={inactiveStar}></img>);
-    }
-
-    return (
-        <div className='rating-container'>
-            {rate}
-        </div>
-    );
+  return (
+    <div className="rating-container">
+      {[...new Array(STARS)].map((index, i) => {
+        const ratePicture = i < rating ? activeStar : inactiveStar;
+        return <img key={i} src={ratePicture}></img>;
+      })}
+    </div>
+  );
 };
 
 export default Notation;
