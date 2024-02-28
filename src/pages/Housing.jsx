@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Tags from '../components/Tags';
 import data from '../assets/data/logements.json'
 import Collapse from '../components/Collapse';
@@ -15,11 +15,11 @@ const Housing = () => {
     const picturesNB = housing.pictures.length;
 
     const handleRight = () => {
-        setIndex((prev) => (prev >= picturesNB - 1 ? 0 : prev + 1 ));    
+        setIndex((prev) => (prev >= picturesNB - 1 ? 0 : prev + 1));
     }
 
     const handleLeft = () => {
-        setIndex((prev) => (prev <= 0 ? picturesNB - 1  : prev - 1));
+        setIndex((prev) => (prev <= 0 ? picturesNB - 1 : prev - 1));
     }
 
 
@@ -38,15 +38,29 @@ const Housing = () => {
                     <Tags className="housing_tags" tagsData={housing.tags} />
                 </div>
                 <div className='housing_host'>
+                    <div>
+
                     <span className='housing_host-name'>{housing.host.name}</span>
                     <img className='housing_host-avatar' src={housing.host.picture} alt={housing.host.name} />
-                    <Notation rating={housing.rating}/>
+                    </div>
+                <div>
+                    <Notation rating={housing.rating} />
                 </div>
+                </div>
+
             </section>
 
             <div className='housing_collapses'>
-                <Collapse className='collapse-housing' title="Description" content={housing.description} />
-                <Collapse className='collapse-housing' title="Équipements" content={housing.equipments} />
+                <Collapse className='collapse-housing' title="Description">
+                    {housing.description}
+                </Collapse>
+                <Collapse className='collapse-housing' title="Équipements">
+                    <ul>
+                        {
+                            housing.equipments.map((equipement) => <li>{equipement}</li>)
+                        }
+                    </ul>
+                </Collapse>
             </div>
         </>
     );

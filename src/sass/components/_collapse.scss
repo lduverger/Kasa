@@ -12,8 +12,24 @@
         border-radius: 5px;
         padding: 0 15px;       
     }
+
+    &-arrow{
+        transition: transform 0.5s ease-in-out;
+        cursor: pointer;
+        
+        &_rotation{
+            transform: rotate(-0.5turn);
+        }
+    }
+
+    &-content_hide{
+        transition: all 0.5s ease;
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+    }
     
-    p{
+    &-text{
         background-color: #F6F6F673;
         font-size: 18px;
         padding: 20px;
@@ -34,3 +50,5 @@
     }
 
 }
+
+

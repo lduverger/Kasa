@@ -1,11 +1,10 @@
 import React, { useRef, useState } from 'react';
 import upArrow from '../assets/images/arrowUp.svg'
 
-const Collapse = ({ className='', title, content }) => {
-
-    const ref = useRef(null);
-    ref.current
-
+const Collapse = ({ className = '', title, children }) => {
+    
+    
+    const contentRef = useRef();
     const [isExpanded, setIsExpanded] = useState(false);
 
     const reverseIsExpanded = () => {
@@ -16,9 +15,18 @@ const Collapse = ({ className='', title, content }) => {
         <div className={'collapse ' + className}>
             <div className='collapse-header' onClick={reverseIsExpanded}>
                 <h3>{title}</h3>
-                <img src={upArrow} alt="fleche" />
+                <img src={upArrow} className={`collapse-arrow ${isExpanded ? "collapse-arrow_rotation" : ""}`} alt="fleche" />
             </div>
-            {isExpanded && <p>{content}</p>}
+            <div className={`collapse-content_hide`} ref={contentRef} 
+            style={isExpanded ? { 
+                height: contentRef.current.scrollHeight + "px",
+                transform: "translateY(0px)" } 
+                : 
+                { 
+                    height: "0px",
+                transform: "translateY(-50px)" }}>
+                <div className='collapse-text'>{children}</div>
+            </div>
         </div>
     );
 };

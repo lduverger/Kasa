@@ -22,6 +22,12 @@
         gap: 10px;
     }
 
+    &_host{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     &_host-name{
         color: $primary-color;
         font-weight: 500;
