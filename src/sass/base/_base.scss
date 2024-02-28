@@ -1,6 +1,20 @@
 #root {
-    max-width: 1240px;
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;    
+    min-height: 100vh;
+
+}
+
+.application{
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    width: 80%;
     margin: 0 auto;
+    flex: 1;
 }
 
 * {
