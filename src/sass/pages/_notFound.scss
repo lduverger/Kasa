@@ -4,15 +4,25 @@
     align-items: center;
     flex-direction: column;
     gap: 139px;
-    margin-bottom: 139px;
+    margin: 140px auto;
+    @media screen and (max-width: 767.98px){
+        gap: 113px;
+    }
 
     h1{
         color: $primary-color;
         font-size: 288px;
+        @media screen and (max-width: 767.98px){
+            font-size: 100px;
+        }
     }
 
     p{
         color: $primary-color;
         font-size: 36px;
+        @media screen and (max-width: 767.98px){
+            font-size: 18px;
+            text-align: center;
+        }
     }
 }

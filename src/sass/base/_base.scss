@@ -9,12 +9,16 @@
 .application{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .main{
     width: 80%;
     margin: 0 auto;
     flex: 1;
+    @media screen and (max-width: 767.98px){
+        width: 90%;
+    }
 }
 
 * {

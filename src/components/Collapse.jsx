@@ -5,6 +5,7 @@ const Collapse = ({ className = '', title, children }) => {
     
     
     const contentRef = useRef();
+    const refHeader = useRef();
     const [isExpanded, setIsExpanded] = useState(false);
 
     const reverseIsExpanded = () => {
@@ -13,18 +14,18 @@ const Collapse = ({ className = '', title, children }) => {
 
     return (
         <div className={'collapse ' + className}>
-            <div className='collapse-header' onClick={reverseIsExpanded}>
+            <div ref={refHeader} className='collapse-header' onClick={reverseIsExpanded}>
                 <h3>{title}</h3>
                 <img src={upArrow} className={`collapse-arrow ${isExpanded ? "collapse-arrow_rotation" : ""}`} alt="fleche" />
             </div>
             <div className={`collapse-content_hide`} ref={contentRef} 
             style={isExpanded ? { 
-                height: contentRef.current.scrollHeight + "px",
+                height: contentRef.current?.scrollHeight + "px",
                 transform: "translateY(0px)" } 
                 : 
                 { 
                     height: "0px",
-                transform: "translateY(-50px)" }}>
+                transform: `translateY(${"-" + refHeader.current?.scrollHeight + "px" })` }}>
                 <div className='collapse-text'>{children}</div>
             </div>
         </div>

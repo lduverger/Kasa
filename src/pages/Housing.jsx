@@ -39,13 +39,12 @@ const Housing = () => {
                 </div>
                 <div className='housing_host'>
                     <div>
-
-                    <span className='housing_host-name'>{housing.host.name}</span>
-                    <img className='housing_host-avatar' src={housing.host.picture} alt={housing.host.name} />
+                        <span className='housing_host-name'>{housing.host.name}</span>
+                        <img className='housing_host-avatar' src={housing.host.picture} alt={housing.host.name} />
                     </div>
-                <div>
-                    <Notation rating={housing.rating} />
-                </div>
+                    <div>
+                        <Notation rating={housing.rating} />
+                    </div>
                 </div>
 
             </section>

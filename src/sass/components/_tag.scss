@@ -10,4 +10,9 @@
     border-radius: 10px;
     padding-right: 30px;
     padding-left: 30px;
+
+    @media screen and (max-width: 767.98px){
+        padding: 0 15px;
+        font-size: 10px;
+    }
 }
