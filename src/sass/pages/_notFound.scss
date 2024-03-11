@@ -9,6 +9,10 @@
         gap: 113px;
     }
 
+    &_return{
+        text-decoration: underline;
+    }
+
     h1{
         color: $primary-color;
         font-size: 288px;
@@ -20,6 +24,7 @@
     p{
         color: $primary-color;
         font-size: 36px;
+        line-height: 142.6%;
         @media screen and (max-width: $phoneMaxWidth){
             font-size: 18px;
             text-align: center;

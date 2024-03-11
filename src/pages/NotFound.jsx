@@ -6,7 +6,7 @@ const NotFound = () => {
         <div className='pageNotFound'>
             <h1>404</h1>
             <p>Oups! La page que vous demandez n'existe pas.</p>
-            <NavLink to="/">Retourner sur la page d'accueil</NavLink>
+            <NavLink className="pageNotFound_return" to="/">Retourner sur la page d'accueil</NavLink>
         </div>
     );
 };

@@ -14,6 +14,7 @@
         font-size: 36px;
         font-weight: 500;
         margin-bottom: 10px;
+        line-height: 142.6%;
         @media screen and (max-width: $phoneMaxWidth){
             font-size: 20px;
         }
@@ -42,13 +43,20 @@
         }
     }
 
+    &_container-name-avatar{
+        display: flex;
+    }
+
     &_host-name{
+        display: flex;
+        align-items: center;
         color: $primary-color;
         font-weight: 500;
         font-size: 18px; 
         line-height: 142.6%;
         text-align: right;
-
+        margin-left: 10px;
+        margin-right: 10px;
         @media screen and (max-width: $phoneMaxWidth){
             font-size: 15px;
         }

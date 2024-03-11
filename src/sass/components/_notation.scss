@@ -1,12 +1,13 @@
 .rating-container{
     display: flex;
-    height: 24px;
 
-    @media screen and (max-width: $phoneMaxWidth){
-        gap: 7px;
-    }
+    height: 24px;
+    gap: 7px;
+    align-items: center;
 
     img{
-        flex: 1;
+        @media screen and (max-width: $phoneMaxWidth){
+            height: 18px;
+        }
     }
 }

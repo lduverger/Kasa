@@ -12,6 +12,9 @@ const Housing = () => {
     const housing = data.find(housingData => housingData.id === location.state.id);
     const [index, setIndex] = useState(0);
 
+    const firstName = housing.host.name.split(' ')[0];
+    const lastName = housing.host.name.split(' ')[1];
+
     const picturesNB = housing.pictures.length;
 
     const handleRight = () => {
@@ -21,7 +24,6 @@ const Housing = () => {
     const handleLeft = () => {
         setIndex((prev) => (prev <= 0 ? picturesNB - 1 : prev - 1));
     }
-
 
     return (
         <>
@@ -38,8 +40,8 @@ const Housing = () => {
                     <Tags className="housing_tags" tagsData={housing.tags} />
                 </div>
                 <div className='housing_host'>
-                    <div>
-                        <span className='housing_host-name'>{housing.host.name}</span>
+                    <div className='housing_container-name-avatar'>
+                        <p className='housing_host-name'>{firstName}<br />{lastName}</p>
                         <img className='housing_host-avatar' src={housing.host.picture} alt={housing.host.name} />
                     </div>
                     <div>

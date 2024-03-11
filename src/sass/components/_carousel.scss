@@ -21,14 +21,24 @@
         top: 0;
         bottom: 0;
         margin: auto 0;
+
+        @media screen and (max-width: $phoneMaxWidth){
+            height: 30px;
+        }
     }
 
     &_left {
         left: 30px;
+        @media screen and (max-width: $phoneMaxWidth){
+            left: 20px;
+        }
     }
 
     &_right {
         right: 30px;
+        @media screen and (max-width: $phoneMaxWidth){
+            right: 20px;
+        }
     }
 
     &_index{
