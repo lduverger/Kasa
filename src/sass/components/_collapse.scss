@@ -11,7 +11,7 @@
         color: white;
         border-radius: 5px;
         padding: 0 15px;
-        @media screen and (max-width: 767.98px){
+        @media screen and (max-width: $phoneMaxWidth){
             height: 30px;
         }     
     }
@@ -24,7 +24,7 @@
             transform: rotate(-0.5turn);
         }
 
-        @media screen and (max-width: 767.98px){
+        @media screen and (max-width: $phoneMaxWidth){
             height: 22px;
         }
     }
@@ -42,7 +42,7 @@
         padding: 20px;
         border-radius: 5px;
         line-height: 142.6%;
-        @media screen and (max-width: 767.98px){
+        @media screen and (max-width: $phoneMaxWidth){
             font-size: 12px;
         }
     }
@@ -52,7 +52,7 @@
         width: 85%;
         margin-left: auto;
         margin-right: auto;
-        @media screen and (max-width: 767.98px){
+        @media screen and (max-width: $phoneMaxWidth){
             font-size: 13px;
         }
     }
@@ -60,7 +60,7 @@
     &-housing{
         font-size: 18px;
         flex: 1;
-        @media screen and (max-width: 767.98px){
+        @media screen and (max-width: $phoneMaxWidth){
             font-size: 13px;
         }
     }

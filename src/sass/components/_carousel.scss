@@ -6,7 +6,7 @@
     overflow: hidden;
     margin-bottom: 30px;
 
-    @media screen and (max-width: 767.98px){
+    @media screen and (max-width: $phoneMaxWidth){
         height: 300px;
     }
 
