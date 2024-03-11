@@ -14,7 +14,7 @@ function App() {
         <div className='main'>
           <Header />
           <Routes>
-            <Route path='/' element={<Home />}></Route>
+            <Route path='/Kasa' element={<Home />}></Route>
             <Route path='/about' element={<About />}></Route>
             <Route path='/housing/:id' element={<Housing />}></Route>
             <Route path='*' element={<NotFound />}></Route>
