@@ -41,7 +41,7 @@ const Housing = () => {
                 <Collapse className='collapse-housing' title="Équipements">
                     <ul>
                         {
-                            housing.equipments.map((equipement) => <li>{equipement}</li>)
+                            housing.equipments.map((equipement) => <li key={equipement}>{equipement}</li>)
                         }
                     </ul>
                 </Collapse>
