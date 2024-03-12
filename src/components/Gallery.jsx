@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Card from './Card';
 import data from '../assets/data/logements.json'
 
@@ -16,14 +16,14 @@ const Gallery = () => {
             {
                 housings.map(housing => (
                     <Card key={housing.id}
-                    id= {housing.id}
-                    src={housing.cover} 
-                    alt={"Photo de " + housing.title}
-                    title={housing.title}
+                        id={housing.id}
+                        src={housing.cover}
+                        alt={"Photo de " + housing.title}
+                        title={housing.title}
                     />
                 ))
             }
-            
+
         </div>
     );
 };

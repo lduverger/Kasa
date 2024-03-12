@@ -1,4 +1,3 @@
-import React from 'react';
 import Navigation from './Navigation';
 import logo from '../assets/images/LOGO.svg'
 

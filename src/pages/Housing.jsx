@@ -1,21 +1,33 @@
-import { useLocation } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Tags from '../components/Tags';
 import data from '../assets/data/logements.json'
 import Collapse from '../components/Collapse';
-
 import Notation from '../components/Notation';
 import Carousel from '../components/Carousel';
+import { useEffect} from 'react';
+
+
 const Housing = () => {
 
-    const location = useLocation();
-    const housing = data.find(housingData => housingData.id === location.state.id);
+    const { id } = useParams();
+    const navigate = useNavigate();
+
+    const housing = data.find(housingData => housingData.id === id);
+
+
+    useEffect(() => {
+        if (housing == null) navigate("/Kasa/NoFound");
+    }, []);
+
+    if (housing == null) return;
+
 
     const firstName = housing.host.name.split(' ')[0];
     const lastName = housing.host.name.split(' ')[1];
 
     return (
         <>
-        <Carousel pictures = {housing.pictures}/>
+            <Carousel pictures={housing.pictures} />
             <section className='housing_content'>
                 <div className='housing_brief'>
                     <h1 className='housing_title'>{housing.title}</h1>

@@ -1,4 +1,3 @@
-import React from 'react';
 import BannerImage from '../components/BannerImage';
 import aboutBackground from '../assets/images/aboutPageBackground.png'
 import Collapse from '../components/Collapse';

@@ -1,4 +1,3 @@
-import React from 'react';
 import inactiveStar from '../assets/images/inactiveStar.svg';
 import activeStar from '../assets/images/activeStar.svg';
 

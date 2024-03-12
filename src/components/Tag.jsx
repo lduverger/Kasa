@@ -1,9 +1,7 @@
-import React from 'react';
-
-const Tag = ({title}) => {
+const Tag = ({ title }) => {
     return (
         <>
-        <li className='tag'>{title}</li>
+            <li className='tag'>{title}</li>
         </>
     );
 };
