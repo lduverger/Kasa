@@ -17,7 +17,7 @@ const Housing = () => {
 
     useEffect(() => {
         if (housing == null) navigate("/Kasa/NoFound");
-    }, []);
+    });
 
     if (housing == null) return;
 
@@ -40,7 +40,7 @@ const Housing = () => {
                         <img className='housing_host-avatar' src={housing.host.picture} alt={housing.host.name} />
                     </div>
                     <div>
-                        <Notation rating={housing.rating} />
+                        <Notation rating={ Number(housing.rating)} />
                     </div>
                 </div>
 

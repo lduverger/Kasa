@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Tag = ({ title }) => {
     return (
         <>
@@ -5,5 +7,9 @@ const Tag = ({ title }) => {
         </>
     );
 };
+
+Tag.propTypes = {
+    title: PropTypes.string.isRequired,
+  }
 
 export default Tag;

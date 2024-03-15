@@ -1,5 +1,6 @@
 import inactiveStar from '../assets/images/inactiveStar.svg';
 import activeStar from '../assets/images/activeStar.svg';
+import PropTypes from 'prop-types';
 
 
 const Notation = ({ rating }) => {
@@ -14,5 +15,9 @@ const Notation = ({ rating }) => {
     </div>
   );
 };
+
+Notation.propTypes = {
+  rating: PropTypes.number.isRequired,
+}
 
 export default Notation;

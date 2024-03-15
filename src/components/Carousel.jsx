@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import PropTypes from 'prop-types'; 
 import leftArrow from '../assets/images/arrowLeft.svg'
 import rightArrow from '../assets/images/arrowRight.svg'
 
@@ -35,5 +35,9 @@ const Carousel = ({ pictures }) => {
         </div>
     );
 };
+
+Carousel.propTypes = {
+    pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
+}
 
 export default Carousel;

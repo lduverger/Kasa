@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const BannerImage = ({ background, text }) => {
     return (
         <div className='banner'>
@@ -6,5 +8,10 @@ const BannerImage = ({ background, text }) => {
         </div>
     );
 };
+
+BannerImage.propTypes = {
+    background: PropTypes.string.isRequired,
+    text: PropTypes.string,
+}
 
 export default BannerImage;

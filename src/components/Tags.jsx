@@ -1,4 +1,6 @@
 import Tag from './Tag';
+import PropTypes from 'prop-types';
+
 
 const Tags = ({ className = '', tagsData }) => {
 
@@ -15,5 +17,10 @@ const Tags = ({ className = '', tagsData }) => {
         </>
     );
 };
+
+Tags.propTypes = {
+    className: PropTypes.string.isRequired,
+    tagsData: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+}
 
 export default Tags;
