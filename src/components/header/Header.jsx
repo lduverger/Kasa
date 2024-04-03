@@ -1,5 +1,5 @@
-import Navigation from './Navigation';
-import logo from '../assets/images/LOGO.svg'
+import Navigation from '../navigation/Navigation';
+import logo from '../../assets/images/LOGO.svg'
 
 const Header = () => {
     return (

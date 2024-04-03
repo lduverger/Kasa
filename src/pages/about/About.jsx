@@ -1,6 +1,6 @@
-import BannerImage from '../components/BannerImage';
-import aboutBackground from '../assets/images/aboutPageBackground.png'
-import Collapse from '../components/Collapse';
+import BannerImage from '../../components/banner/BannerImage';
+import aboutBackground from '../../assets/images/aboutPageBackground.png'
+import Collapse from '../../components/collapse/Collapse';
 
 const About = () => {
     return (

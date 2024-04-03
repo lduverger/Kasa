@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
-import upArrow from '../assets/images/arrowUp.svg'
+import upArrow from '../../assets/images/arrowUp.svg'
 
 const Collapse = ({ className = '', title, children }) => {
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import Card from './Card';
-import data from '../assets/data/logements.json'
+import Card from '../card/Card';
+import data from '../../assets/data/logements.json'
 
 const Gallery = () => {
 

@@ -6,19 +6,19 @@
 'base/base';
 
 @import
-'layout/header',
-'layout/footer';
+'../components/header/header',
+'../components/footer/footer';
 
 @import
-'components/banner',
-'components/card',
-'components/gallery',
-'components/collapse',
-'components/carousel',
+'../components/banner/banner',
+'../components/card/card',
+'../components/gallery/gallery',
+'../components/collapse/collapse',
+'../components/carousel/carousel',
 'components/tag',
-'components/notation';
+'../components/rating/rating';
 
 
 @import
-'pages/notFound',
-'pages/housing';
+'../pages/notFound/notFound',
+'../pages/housing/housing';

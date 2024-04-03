@@ -1,9 +1,9 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import Tags from '../components/Tags';
-import data from '../assets/data/logements.json'
-import Collapse from '../components/Collapse';
-import Notation from '../components/Notation';
-import Carousel from '../components/Carousel';
+import Tags from '../../components/Tags';
+import data from '../../assets/data/logements.json'
+import Collapse from '../../components/collapse/Collapse';
+import Rating from '../../components/rating/Rating';
+import Carousel from '../../components/carousel/Carousel';
 import { useEffect} from 'react';
 
 
@@ -40,7 +40,7 @@ const Housing = () => {
                         <img className='housing_host-avatar' src={housing.host.picture} alt={housing.host.name} />
                     </div>
                     <div>
-                        <Notation rating={ Number(housing.rating)} />
+                        <Rating rating={ Number(housing.rating)} />
                     </div>
                 </div>
 
