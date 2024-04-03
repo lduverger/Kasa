@@ -10,7 +10,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='application'>
         <div className='main'>
           <Header />
           <Routes>
@@ -23,7 +22,6 @@ function App() {
         <div className='main_footer'>
           <Footer />
         </div>
-      </div>
     </BrowserRouter>
   )
 }
