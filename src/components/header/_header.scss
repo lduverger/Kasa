@@ -4,29 +4,7 @@ header{
     margin-top: 50px;
     margin-bottom: 50px;
 
-    nav{
-        display: flex;
-        align-items: center;
-    }
-
-    ul{
-        display: flex;
-    }
-
-    a{
-        font-weight: 500;
-        margin-left: 60px;
-        &:hover{
-            text-decoration: underline;
-        }
-    }
-
     @media screen and (max-width: $phoneMaxWidth){
-        a{
-            font-size: 15px;
-            margin-left: 26px;
-        }
-
         img{
             height: 45px;
         }
