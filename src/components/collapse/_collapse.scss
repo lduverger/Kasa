@@ -1,6 +1,10 @@
 .collapse{
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $phoneMaxWidth){
+        margin-bottom: 20px;
+    }    
 
     &-header{
         display: flex;
@@ -54,6 +58,7 @@
         margin-right: auto;
         @media screen and (max-width: $phoneMaxWidth){
             font-size: 13px;
+            width: 100%;
         }
     }
 
