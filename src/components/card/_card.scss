@@ -2,6 +2,7 @@
     height: 340px;
     position: relative;
     border-radius: 10px;
+    overflow: hidden;
     cursor: pointer;
 
     img{
@@ -13,11 +14,16 @@
 
     &-title{
         position: absolute;
+        display: flex;
+        align-items: center;
+        height: 20%;        
+        padding: 20px;
         color: white;
-        left: 20px;
-        bottom: 20px;
-        margin-right: 20px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
         line-height: 142.6%;
         font-size: 20px;
+        background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0))
     }
 }
