@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import Tags from '../../components/Tags';
+import Tags from '../../components/tags/Tags';
 import data from '../../assets/data/logements.json'
 import Collapse from '../../components/collapse/Collapse';
 import Rating from '../../components/rating/Rating';
