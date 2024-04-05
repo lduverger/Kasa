@@ -4,11 +4,11 @@ const Navigation = () => {
     return (
         <nav>
             <ul>
-                <NavLink to="/Kasa"
+                <NavLink to="/"
                     style={({isActive}) => isActive ? {textDecoration: "underline"} : {}} end>
                     <li>Accueil</li>
                 </NavLink>
-                <NavLink to="/Kasa/about"
+                <NavLink to="/about"
                     style={({isActive}) => isActive ? {textDecoration: "underline"} : {}} end>
                     <li>A Propos</li>
                 </NavLink>

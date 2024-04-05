@@ -16,7 +16,7 @@ const Housing = () => {
 
 
     useEffect(() => {
-        if (housing == null) navigate("/Kasa/NoFound");
+        if (housing == null) navigate("/NoFound");
     });
 
     if (housing == null) return;

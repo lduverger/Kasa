@@ -6,7 +6,7 @@ const Card = ({ id, src, alt, title }) => {
     const navigate = useNavigate();
 
     const goToHousing = (id) => {
-        navigate(`/Kasa/housing/${id}`);
+        navigate(`/housing/${id}`);
     }
 
     return (

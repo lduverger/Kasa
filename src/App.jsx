@@ -9,14 +9,14 @@ import Footer from './components/footer/Footer'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Kasa'>
       <div className='application'>
         <div className='main'>
           <Header />
           <Routes>
-            <Route path='/Kasa' element={<Home />}></Route>
-            <Route path='/Kasa/about' element={<About />}></Route>
-            <Route path='/Kasa/housing/:id' element={<Housing />}></Route>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/about' element={<About />}></Route>
+            <Route path='/housing/:id' element={<Housing />}></Route>
             <Route path='*' element={<NotFound />}></Route>
           </Routes>
         </div>
