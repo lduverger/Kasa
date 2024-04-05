@@ -5,6 +5,9 @@ header{
     margin-bottom: 50px;
 
     @media screen and (max-width: $phoneMaxWidth){
+
+        margin-top: 20px;
+        margin-bottom: 25px;
         img{
             height: 45px;
         }

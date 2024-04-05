@@ -12,7 +12,8 @@
     padding-left: 30px;
 
     @media screen and (max-width: $phoneMaxWidth){
-        padding: 0 15px;
+        height: 18px;
+        padding: 0px 14px;
         font-size: 10px;
     }
 }
